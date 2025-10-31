@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    function mynumbers(){
+        let no=Number(document.getElementById("demo").value);
+
+        for(i=1; i<=no; i=i+1){
+            document.write(i);
+        }
+    }
+</script>
+<body>
+
+    <h2>Numbers series</h2>
+
+    <label>Enter a No</label>
+    <input type="text" id="demo"><br><br>
+
+    <button onclick="mynumbers()">click</button>
+    
+</body>
+</html><br><br><br><br>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function myevencounts(){
+            let no1=Number(document.getElementById("demo1").value);
+
+            for(i=2; i<=no1; i=i+2){
+                document.write(i);
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Even Numbers Series</h2>
+
+    <label>Enter a Number</label>
+    <input type="text" id="demo1"><br><br>
+
+    <button onclick="myevencounts()">click</button>
+    
+</body>
+</html><br><br><br><br>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function myimage(){
+            let i = document.getElementById("myfile").files[0].name;
+            document.getElementById("hibi img").src=i;
+        }
+    </script>
+</head>
+<body>
+
+    <img id="hibi img" src="hibi.jpg" alt="hibiscus flower" width="300px" height="300px">
+    <br>
+    <br>
+    <input type="file" id="myfile" onchange="myimage()">
+
+    <button onclick="myimage()">submit</button>
+    
+</body>
+</html>
