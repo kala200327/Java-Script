@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Odd or Even Calculation</title>
+</head>
+
+<script>
+  
+  function oddeven(){
+    let number=Number(document.getElementById("number1").value);
+    
+    if(number%2==0){
+      alert("The Number is Even");
+    }
+    
+    else{
+      alert("The Number is Odd");
+    }
+  }
+</script>
+<body>
+  
+  <h2>Find odd or even Number</h2>
+  
+  <label>Enter a Number:</label>
+  <input type="number"  id="number1">
+  
+  <button onclick="oddeven()">Odd/Even</button>
+  
+  
+ 
+</body>
+</html><br><br></br><br>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positive/Negative Checking</title>
+
+    <script>
+        function checknumber(){
+            let number=Number(document.getElementById("output").value);
+
+            if(number>0)
+        {
+            document.getElementById("result").innerHTML="The Number is Positive";
+        }
+
+            else{
+            document.getElementById("result").innerHTML="The Number is Negative";
+
+        }
+        
+     }
+    </script>
+</head>
+<body>
+
+    <h2>Positive or Negative Number Checking</h2>
+
+    <label>Enter a Number:</label>
+    <input type="number" id="output">
+
+    <button onclick="checknumber()">check</button>
+
+    <p id="result"></p>
+</body>
+</html><br><br></br><br>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Calculation</title>
+
+    <script>
+        function resultCalculation()
+        {
+            let tamil=Number(document.getElementById("sub1").value);
+            let english=Number(document.getElementById("sub2").value);
+            let maths=Number(document.getElementById("sub3").value);
+            let science=Number(document.getElementById("sub4").value);
+            let social=Number(document.getElementById("sub5").value);
+
+            let total= tamil+english+maths+science+social;
+
+            let averages=total/5;
+
+            let result;
+
+            if(tamil>=35 && english>=35 && maths>=35 && science>=35 && social>=35)
+        {
+            result="Pass";
+        }
+            else{
+            result="Fail";
+        }
+
+        document.getElementById("total").value=total;
+        document.getElementById("avg").value=averages;
+        document.getElementById("result1").value=result;
+
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Student Result Calculation</h2>
+
+    <label>Tamil:</label>
+    <input type="number"  id="sub1"><br><br>
+
+    <label>English:</label>
+    <input type="number"  id="sub2"><br><br>
+
+    <label>Maths:</label>
+    <input type="number"  id="sub3"><br><br>
+
+    <label>Science:</label>
+    <input type="number"  id="sub4"><br><br>
+
+    <label>Social:</label>
+    <input type="number"  id="sub5"><br><br>
+
+    <button onclick="resultCalculation()">submit</button><br><br>
+
+    <label>Total Marks:</label>
+    <input type="number" id="total"><br><br>
+
+    <label>Averages:</label>
+    <input type="number" id="avg"><br><br>
+
+    <label>Result:</label>
+    <input type="text" id="result1"><br><br>
+
+</body>
+</html><br><br><br><br>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+    function changingtext(){
+      document.getElementById("changing").innerHTML="Hello Welcome to javascript";
+    }
+  </script>
+</head>
+<body>
+  
+
+  <h2 id="changing">HELLO</h2>
+
+  <button onclick="changingtext()">click me</button>
+</body>
+</html>
