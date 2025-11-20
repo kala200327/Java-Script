@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function shuffle(){
+            var r =  Math.floor(Math.random() * 6)+1;
+            console.log(r);
+            document.getElementById('dice1').src =  'd'+r + '.webp';
+        }
+    </script>
+</head>
+<body>
+
+    <img src="d1.webp"  id="dice1" style="height: 200px; width: 200px;">
+
+    
+    <button  onclick="shuffle()">shuffle</button>
+    
+</body>
+</html>
