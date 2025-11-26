@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function sound1()
+        {
+            let audio = new Audio("a1.mp3"); 
+            audio.play();
+        }
+
+        function sound2()
+        {
+            let audio = new Audio("a2.mp3"); 
+            audio.play();
+        }
+
+        function sound3()
+        {
+            let audio = new Audio("a3.mp3"); 
+            audio.play();
+        }
+
+        function sound4()
+        {
+            let audio = new Audio("a4.mp3"); 
+            audio.play();
+        }
+        
+
+    </script>
+</head>
+<body style="background-color: rgb(125, 64, 138);">
+
+    <h2 style="color: white; text-align: center;font-size: 50px;">keyboard kit</h2>
+    <img src="key1.jpg" alt="k letter" id="a1" onclick="sound1()" style="height: 100px; width: 100px; border: 8px solid white; margin: 30px;">
+
+    <img src="key2.jpg" alt="e letter" id="a2" onclick="sound2()" style="height: 100px; width: 100px; border: 8px solid white; margin: 30px;">
+    <img src="key3.jpg" alt="y letter" id="a3" onclick="sound3()" style="height: 100px; width: 100px; border: 8px solid white; margin: 30px;">
+    <img src="key4.jpg" alt="b letter" id="a4" onclick="sound4()" style="height: 100px; width: 100px; border: 8px solid white; margin: 30px;">
+</body>
+</html>
