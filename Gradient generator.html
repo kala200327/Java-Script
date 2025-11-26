@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function generateGradient() {
+            const color1 = document.getElementById('color1').value;
+            const color2 = document.getElementById('color2').value;
+            const gradient = `linear-gradient(to right, ${color1}, ${color2})`;
+            
+            document.getElementById('body').style.background = gradient;
+        }
+    </script>
+</head>
+<body id="body">
+    
+    <div class="container" style="text-align: center;">
+        <h2 style="margin-top: 50px; font-size: 30px;">Gradient Color Generator</h2>
+
+        <div style="padding: 50px; display: flex; justify-content: center; gap: 20px;">
+            <input type="color" id="color1" style="height: 50px; width: 100px;">
+            <input type="color" id="color2" style="height: 50px; width: 100px;">
+        </div>
+
+        <button onclick="generateGradient()" style="height: 50px; width: 200px; font-size: 18px; cursor: pointer;">Generate Gradient</button>
+    </div>
+    
+    
+</body>
+</html>
