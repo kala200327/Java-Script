@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function addnote() {
+           const box = document.createElement("textarea");
+           box.style.width = "200px";
+           box.style.height = "200px";
+           box.style.border = "2px solid black";
+           box.style.margin = "10px";   
+              box.style.backgroundColor = "lightyellow";
+              
+              box.style.fontSize = "20px";
+              box.style.borderRadius = "10px";
+              box.style.padding = "10px";
+               box.placeholder="text here...";
+                        
+
+
+        document.body.appendChild(box);
+
+            
+        }
+    </script>
+</head>
+<body style="background-color: rgb(121, 169, 209);">
+
+    <div class="container-fluid" style="margin: 20px auto; text-align: center;">
+    
+    <h1 style="color:white; padding: 5px; background-color: rgb(226, 10, 10);">Note Create</h1>
+
+    </div>
+    <button onclick="addnote()" style="height: 200px; width: 200px; cursor: pointer;background-color: rgba(137, 43, 226, 0.219); border-radius: 20px; font-size: 50px;">+</button>
+
+    
+   
+</body>
+</html>
